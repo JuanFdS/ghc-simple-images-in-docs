@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 3b0200e9a1c7016df4ed6f73859a9a02a1af1640c0373bd1a092ad2038a39b1c
+
+name:           ghc-simple-images-in-docs
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/ghc-simple-images-in-docs#readme>
+homepage:       https://github.com/githubuser/ghc-simple-images-in-docs#readme
+bug-reports:    https://github.com/githubuser/ghc-simple-images-in-docs/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/ghc-simple-images-in-docs
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_ghc_simple_images_in_docs
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable ghc-simple-images-in-docs-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_ghc_simple_images_in_docs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , ghc-simple-images-in-docs
+  default-language: Haskell2010
+
+test-suite ghc-simple-images-in-docs-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_ghc_simple_images_in_docs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , ghc-simple-images-in-docs
+  default-language: Haskell2010

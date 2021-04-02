@@ -1,0 +1,10 @@
+cradle:
+  stack:
+    - path: "./app"
+      component: "ghc-simple-images-in-docs:exe:ghc-simple-images-in-docs-exe"
+
+    - path: "./src"
+      component: "ghc-simple-images-in-docs:lib"
+
+    - path: "./test"
+      component: "ghc-simple-images-in-docs:test:ghc-simple-images-in-docs-test"
